@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Marcar Asistencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav><!-- Copia el nav --></nav>
+    <main>
+        <h1>Marcar Asistencia</h1>
+        <form id="form-asistencia">
+            <select id="estudiante-select" required></select>
+            <select id="estado">
+                <option value="presente">Presente</option>
+                <option value="ausente">Ausente</option>
+                <option value="tardanza">Tardanza</option>
+            </select>
+            <button type="submit">Marcar</button>
+        </form>
+        <h2>Asistencias Recientes</h2>
+        <table id="tabla-asistencias">
+            <thead><tr><th>Fecha</th><th>Estudiante ID</th><th>Estado</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
